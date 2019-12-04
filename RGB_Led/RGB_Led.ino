@@ -18,7 +18,7 @@ void loop() { // Cycle through the RGB spectrum
 
 // Set the LED to a specific color
 void color(int red, int green, int blue) {
-  analogWrite(pins[0], red);
-  analogWrite(pins[1], green);
-  analogWrite(pins[2], blue);
+  digitalWrite(pins[0], red);
+  digitalWrite(pins[1], green);
+  digitalWrite(pins[2], blue);
 }
