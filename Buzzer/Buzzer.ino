@@ -1,12 +1,19 @@
 int frequency = 100;
 
 void setup() {
-  pinMode(7, INPUT);
   pinMode(8, OUTPUT);
 }
 
 void loop() {
-  if (digitalRead(7)) {
-     tone(8, 100);
-  }
+    tone(8, 400);
+    delay(5000);
+    tone(8, 1000);
+    delay(5000);
+    tone(8, 100);
+    delay(5000);
+    tone(8, 50);
+    delay(5000);
+    tone(8, 3000);
+    delay(5000);
+    tone(8, 200);
 }

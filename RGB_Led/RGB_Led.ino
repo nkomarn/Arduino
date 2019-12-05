@@ -1,4 +1,4 @@
-int pins [] = {8, 9, 10};
+int pins [] = {11, 12, 13};
 
 void setup() {
   for (int i = 0; i < sizeof(pins); i++) {
@@ -7,18 +7,12 @@ void setup() {
 }
 
 void loop() { // Cycle through the RGB spectrum
-  for (int r = 0; r < 254; r++) {
-    for (int g = 0; g < 254; g++) {
-      for (int b = 0; b < 254; b++) {
-        color(r, g, b);
-      }
-    }
-  }
+   color(254, 0, 0);
 }
 
 // Set the LED to a specific color
 void color(int red, int green, int blue) {
-  digitalWrite(pins[0], red);
-  digitalWrite(pins[1], green);
-  digitalWrite(pins[2], blue);
+  analogWrite(pins[0], red);
+  analogWrite(pins[1], green);
+  analogWrite(pins[2], blue);
 }
